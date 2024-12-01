@@ -1,10 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home_bf_login from "./pages/before-login/Home_bf_login";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home_bf_login/>} />
+      </Routes>
+    </div>
   );
 }
 
