@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import logoRekanPabrik from "../assets/logoRekanPabrik.png"
+import logoRekanPabrik from "../../public/assets/logoRekanPabrik.png"
 
 export default function Navbar() {
   const navbarRef = useRef(null); 
