@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import logoRekanPabrik from "../../public/assets/logoRekanPabrik.png"
+import logoRekanPabrik from "/public/assets/logoRekanPabrik.png"
 
 export default function Navbar() {
   const navbarRef = useRef(null); 
@@ -43,7 +43,7 @@ export default function Navbar() {
       ref={navbarRef}
       className="navbar fixed top-0 z-50 w-full bg-transparent transition-all duration-300 justify-between text-black capitalize"
     >
-      <a href="/src/home-before-login/home/HomeBFLogin.html">
+      <a href="/">
         <img
           src={logoRekanPabrik}
           alt="Logo"
@@ -53,7 +53,7 @@ export default function Navbar() {
       <ul className="flex gap-6 mr-6 items-center text-black text-[20px] font-[500]">
         <li>
           <a
-            href="#"
+            href="/aboutus"
             className="nav-a hover:text-[#a86108] transition-colors duration-[.2s]"
           >
             About Us
