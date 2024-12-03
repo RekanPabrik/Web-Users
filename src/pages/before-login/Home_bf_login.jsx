@@ -1,13 +1,11 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import zeroSectionImg from "../../../public/assets/zeroSectionIMG-01.png";
-import zeroSectionImgDua from "../../../public/assets/zeroSectionIMG-02.png";
+import zeroSectionImg from "/public/assets/zeroSectionIMG-01.png";
+import zeroSectionImgDua from "/public/assets/zeroSectionIMG-02.png";
 import Slider from "../../components/slider";
 
 export default function Home_bf_login() {
   return (
     <>
-      <Navbar />
       <div className="mt-[100px] w-[100%] h-[100vh] bg-[#ecca9c;] text-[#a86108] flex justify-center">
         <div className="flex flex-row-reverse justify-center items-center h-[600px] gap-[500px] ">
           <img
@@ -35,7 +33,7 @@ export default function Home_bf_login() {
       </div>
 
       <div className="p-[20px]">
-        <h1 className="text-[40px] font-semibold">find your next company!</h1>
+        <h1 className="text-[40px] font-bold">find your next company!</h1>
         <p class="w-[500px]">
           Browse company profiles to find the right workplace for you. Learn
           about jobs, reviews, company culture, benefits and perks.
@@ -47,7 +45,7 @@ export default function Home_bf_login() {
         <div class="flex flex-row-reverse items-center gap-[200px]">
           <img src={zeroSectionImgDua} alt="" className="rounded-[8px]" />
           <div>
-            <h1 class="text-[40px] w-[500px] font-[600]">
+            <h1 class="text-[40px] w-[500px] font-bold">
               “Hello” Karir yang lebih baik!
             </h1>
             <p class="text-[24px] font-[300] text-[#828282]">
@@ -62,7 +60,24 @@ export default function Home_bf_login() {
         </div>
       </div>
 
-      <div className="mt-[1000px]"></div>
+      <div className="mt-[100px] flex justify-center">
+        <div class="flex flex-row items-center gap-[200px]">
+          <img src={zeroSectionImgDua} alt="" className="rounded-[8px]" />
+          <div>
+            <h1 class="text-[40px] w-[500px] font-bold">
+              “Hello” Kandidat dengan pencocokan lebih baik!
+            </h1>
+            <p class="text-[24px] font-[300] text-[#828282]">
+              Dapatkan kandidat karyawan perusahaan anda disini
+            </p>
+            <a href="">
+              <button className="btn mt-[30px] bg-[#a86108] text-white w-[250px] h-[50px] text-[15px] hover:bg-[#a86108] border-transparent capitalize">
+                Mulai Sekarang, Gratis!
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
