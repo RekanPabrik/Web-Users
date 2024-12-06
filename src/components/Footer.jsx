@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa"; 
-import logoRekanPabrik from "/public/assets/logoRekanPabrik.png";
+import logoRekanPabrik from "/assets/logoRekanPabrik.png";
 
 function Footer() {
   return (

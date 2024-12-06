@@ -1,4 +1,4 @@
-import img from "/public/assets/logoRekanPabrik.png";
+import img from "/assets/logoRekanPabrik.png";
 
 const dataPabrik = [
   {

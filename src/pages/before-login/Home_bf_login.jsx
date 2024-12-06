@@ -1,6 +1,6 @@
 import React from "react";
-import zeroSectionImg from "/public/assets/zeroSectionIMG-01.png";
-import zeroSectionImgDua from "/public/assets/zeroSectionIMG-02.png";
+import zeroSectionImg from "/assets/zeroSectionIMG-01.png";
+import zeroSectionImgDua from "/assets/zeroSectionIMG-02.png";
 import Slider from "../../components/slider";
 
 export default function Home_bf_login() {

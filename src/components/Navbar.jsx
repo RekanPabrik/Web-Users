@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import logoRekanPabrik from "/public/assets/logoRekanPabrik.png"
+import logoRekanPabrik from "/assets/logoRekanPabrik.png"
 
 export default function Navbar() {
   const navbarRef = useRef(null); 
@@ -69,7 +69,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="#"
+            href="/contactus"
             className="nav-a hover:text-[#a86108] transition-colors duration-[.2s]"
           >
             Contact Us
