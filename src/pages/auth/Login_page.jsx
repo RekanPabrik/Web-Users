@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import logoRekanPabrik from "/assets/logoRekanPabrik.png";
+import Swal from "sweetalert2";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 function Login_page() {
+  const [isPasswordVisible, setPasswordVisible] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!isPasswordVisible);
+  };
+
   return (
     <>
       <div className="flex justify-center flex-col items-center mt-[150px]">
@@ -25,23 +45,33 @@ function Login_page() {
             <input
               className="w-[300px] h-[30px] text-[15px] border rounded-[5px] border-solid border-gray-500"
               type="email"
-              value=""
+              value={formData.email}
+              onChange={handleChange}
               name="email"
               id="emailUser"
               placeholder="your-email.com"
               required
             />
           </div>
-          <div class="passInput">
-            <input
-              className="w-[300px] h-[30px] text-[15px] border rounded-[5px] border-solid border-gray-500"
-              type="password"
-              value=""
-              name="password"
-              id="passUser"
-              placeholder="your-password"
-              required
-            />
+          <div>
+            <div className="relative">
+              <input
+                className="w-[300px] h-[30px] text-[15px] border rounded-[5px] border-solid border-gray-500"
+                type={isPasswordVisible ? "text" : "password"}
+                value={formData.password}
+                onChange={handleChange}
+                name="password"
+                id="passUser"
+                placeholder="your-password"
+                required
+              />
+              <span
+                className="absolute right-3 top-2 cursor-pointer text-gray-600"
+                onClick={togglePasswordVisibility}
+              >
+                {isPasswordVisible ? <FaEye /> : <FaEyeSlash />}
+              </span>
+            </div>
             <div className="flex justify-end w-[100%]">
               <a href="">
                 <p className="hover:text-blue-700">Reset password</p>

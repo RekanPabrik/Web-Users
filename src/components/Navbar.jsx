@@ -61,7 +61,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="#"
+            href="/registerperusahaan"
             className="nav-a hover:text-[#a86108] transition-colors duration-[.2s]"
           >
             For the Company
