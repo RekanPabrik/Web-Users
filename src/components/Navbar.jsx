@@ -76,7 +76,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/loginpage">
             <button className="btn bg-[#a86108] text-white w-[100px] text-[20px] font-bold hover:bg-[#a86108]">
               Log in
             </button>

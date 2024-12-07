@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About_Us from "./pages/before-login/About_Us";
 import Contact_Us from "./pages/before-login/Contact_Us";
+import Login_page from "./pages/auth/Login_page";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home_bf_login />} />
         <Route path="/aboutus" element={<About_Us />} />
         <Route path="/contactus" element={<Contact_Us />} />
+        <Route path="/loginpage" element={<Login_page />} />
       </Routes>
       <Footer />
     </div>
